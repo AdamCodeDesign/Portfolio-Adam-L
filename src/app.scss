@@ -1,25 +1,122 @@
-html{
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Source Code Pro", monospace;
-}
-
-body{
-    background-color: rgb(7, 37, 31);
-    color: rgb(138, 239, 138);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
 }
 
-a{
-   text-decoration: none;
-   color: inherit; 
+body {
+  background-color: rgb(2, 18, 15);
+  color: rgb(138, 239, 138);
 }
 
-section{
-    height: 100vh;
-    scroll-snap-align: center;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  position: relative;
+
+  @keyframes afterAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+      opacity: 0.3;
+    }
+  }
+  @keyframes beforeAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(-15deg);
+      width: 100px;
+      font-size: 0.5em;
+      opacity: 0.3;
+    //   top: 20%;
+    }
+    30% {
+      transform: rotate(720deg);
+      width: 50px;
+      top: 70%;
+      right: 80%;
+      opacity: 0.5;
+
+    }
+    45% {
+      transform: rotate(-180deg);
+      width: 50px;
+      top: 20%;
+      opacity: 0.5;
+
+    }
+    60% {
+      transform: rotate(30deg);
+      width: 50px;
+      top: 20%;
+      opacity: 0.5;
+
+    }
+    75% {
+      transform: rotate(-90deg);
+      width: 50px;
+      top: 20%;
+      opacity: 0.3;
+
+    }
+    100% {
+      transform: rotate(360deg);
+      width: 50px;
+      top: 20%;
+      opacity: 0.3;
+
+    }
+  }
+
+  &::after {
+    content: "[Leszczyk]";
+    text-align: center;
+    opacity: 0;
+    width: 10%;
+    height: 0;
+    background-color: rgb(4, 128, 62);
+    position: fixed;
+    top: 80%;
+    right: 70%;
+    border-radius: 70%;
+    // box-shadow: 2px 6px 50px 12px rgb(62, 171, 113);
+    animation-name: afterAnimation;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll();
+  }
+  &::before {
+    content: "[Adam] ";
+    text-align: center;
+    opacity: 0;
+    width: 10%;
+    height: 0;
+    background-color: rgb(4, 128, 62);
+    position: fixed;
+    top: 40%;
+    right: 30%;
+    border-radius: 70%;
+    // box-shadow: 0 6px 50px 10px rgb(62, 171, 113);
+    animation-name: beforeAnimation;
+    animation-duration: 1ms; /* Firefox requires this to apply the animation */
+    animation-direction: alternate;
+    animation-timeline: scroll();
+  }
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
 }
