@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 import Sidebar from "../sidebar/Sidebar";
 
 export default function Navbar() {
-  const myName = "Adam Leszczyk";
-  const profession = "FRONTEND DEVELOPER";
+  const myName = 'const myName = "Adam Leszczyk"';
+  const profession = 'const profession = "FRONTEND DEVELOPER"';
   const variants = {
-    visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
     hidden: { opacity: 0 },
   };
 

@@ -2,8 +2,10 @@
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 150px;
   margin: 0;
 
   .robot {
@@ -11,7 +13,7 @@
     width: 250px;
     height: 200px;
     border-radius: 30%;
-    background-color: grey;
+    background-color: white;
 
     @keyframes eyesAnimation {
       0% {
@@ -45,7 +47,7 @@
       left: 120px;
       width: 10px;
       height: 10px;
-      background-color: grey;
+      background-color: white;
 
       &::after {
         content: "";
@@ -54,7 +56,7 @@
         left: 20px;
         width: 10px;
         height: 10px;
-        background-color: grey;
+        background-color: white;
       }
       &::before {
         content: "";
@@ -63,7 +65,7 @@
         left: 40px;
         width: 10px;
         height: 10px;
-        background-color: grey;
+        background-color: white;
       }
     }
 
@@ -197,7 +199,7 @@
       width: 20px;
       height: 50px;
       border-radius: 10px;
-      background-color: grey;
+      background-color: white;
     }
     .ear2 {
       position: absolute;
@@ -206,7 +208,7 @@
       width: 20px;
       height: 50px;
       border-radius: 10px;
-      background-color: grey;
+      background-color: white;
     }
   }
 }
