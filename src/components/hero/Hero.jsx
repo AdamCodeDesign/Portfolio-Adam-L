@@ -1,11 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import "./hero.scss";
 
 export default function Hero() {
   const robotAnimation = {
     height: { top: "30px" },
-    low: { top: "50px" },
+    low: { y: [10, 0, 10] },
   };
 
   const textAnimation = {
@@ -17,7 +17,14 @@ export default function Hero() {
     "HI, human! I would like to introduce You another human. He is my friend and looking for a job. Below, You will find some information about him.";
   return (
     <div className="container-hero">
-      <motion.div className="robot" drag>
+      <motion.div
+        className="robot"
+        drag
+        variants={robotAnimation}
+        initial="height"
+        animate={{ y: [10, 0, 10], x: [10, 0, 10] }}
+        transition={{ ease: "easeInOut", duration: 4, repeat: Infinity }}
+      >
         <motion.div className="radar"></motion.div>
         <motion.div className="smile">
           <motion.div className="smile1"></motion.div>
@@ -34,8 +41,15 @@ export default function Hero() {
           variants={robotAnimation}
           initial="height"
           animate="low"
+          transition={{ ease: "easeInOut", duration: 4, repeat: Infinity }}
         ></motion.div>
-        <motion.div className="ear2"></motion.div>
+        <motion.div
+          className="ear2"
+          variants={robotAnimation}
+          initial="height"
+          animate="low"
+          transition={{ ease: "easeInOut", duration: 4, repeat: Infinity }}
+        ></motion.div>
       </motion.div>
       <motion.span
         className="info"

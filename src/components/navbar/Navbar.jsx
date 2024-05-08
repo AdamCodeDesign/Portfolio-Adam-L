@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="logo">
           <motion.span initial="hidden" animate="visible" variants={variants}>
             {[...myName].map((letter, idx) => (
-              <motion.span key={idx} variants={variants}>
+              <motion.span key={idx} variants={variants} >
                 {letter}
               </motion.span>
             ))}
