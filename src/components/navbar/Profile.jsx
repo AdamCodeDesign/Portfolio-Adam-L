@@ -1,4 +1,4 @@
-import "./navbar.scss";
+import "./profile.scss";
 import git from "../../assets/github.png";
 import pubg from "../../assets/pubg.png";
 import CG from "../../assets/CG.svg";
@@ -6,7 +6,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Sidebar from "../sidebar/Sidebar";
 
-export default function Navbar() {
+export default function Profile() {
   const myName = 'const myName = "Adam Leszczyk"';
   const profession = 'const profession = "FRONTEND DEVELOPER"';
   const variants = {

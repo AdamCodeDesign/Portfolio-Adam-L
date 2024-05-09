@@ -3,6 +3,10 @@ import { motion, transform } from "framer-motion";
 import "./hero.scss";
 
 export default function Hero() {
+  const transformer = transform([0, 100], [0, 360]);
+  const rotate = transformer(10); 
+  
+
   const robotAnimation = {
     height: { top: "30px" },
     low: { y: [10, 0, 10] },
@@ -25,7 +29,15 @@ export default function Hero() {
         animate={{ y: [10, 0, 10], x: [10, 0, 10] }}
         transition={{ ease: "easeInOut", duration: 4, repeat: Infinity }}
       >
-        <motion.div className="radar"></motion.div>
+        <motion.div
+          className="radar"
+          animate={{ rotate}}
+          transition={{
+            animationTimingFunction: "linear",
+            repeat: Infinity,
+            duration: 4,
+          }}
+        ></motion.div>
         <motion.div className="smile">
           <motion.div className="smile1"></motion.div>
           <motion.div className="smile2"></motion.div>

@@ -57,6 +57,7 @@
       width: 10px;
       height: 10px;
       background-color: white;
+      transform: rotate(-20deg);
       
 
       &::after {
@@ -100,12 +101,6 @@
         height: 10px;
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
-        // animation-name: talkAnimation;
-        animation-duration: 1s; /* Firefox requires this to apply the animation */
-        animation-direction: normal;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: 100;
-        animation-delay: 0.5s;
       }
       .smile2 {
         position: absolute;
@@ -116,8 +111,8 @@
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
         animation-name: talkAnimation;
-        animation-duration: 1s; /* Firefox requires this to apply the animation */
-        animation-timing-function: linear;
+        animation-duration: 0.5s; 
+        animation-timing-function: ease-in;
         animation-iteration-count: 100;
         animation-delay: 0.4s;
       }
@@ -130,8 +125,8 @@
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
         animation-name: talkAnimation;
-        animation-duration: 1s; /* Firefox requires this to apply the animation */
-        animation-timing-function: ease-in-out;
+        animation-duration: 0.7s; 
+        animation-timing-function: ease;
         animation-iteration-count: 100;
         animation-delay: 0.5s;
       }
@@ -144,8 +139,8 @@
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
         animation-name: talkAnimation;
-        animation-duration: 1s; /* Firefox requires this to apply the animation */
-        animation-timing-function: ease-in-out;
+        animation-duration: 0.8s; 
+        animation-timing-function: ease-in;
         animation-iteration-count: 100;
         animation-delay: 0.6s;
       }
@@ -158,8 +153,8 @@
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
         animation-name: talkAnimation;
-        animation-duration: 1s; /* Firefox requires this to apply the animation */
-        animation-timing-function: ease-in-out;
+        animation-duration: 0.7s;
+        animation-timing-function: ease;
         animation-iteration-count: 100;
         animation-delay: 0.7s;
       }
@@ -171,11 +166,6 @@
         height: 10px;
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
-        // animation-name: talkAnimation;
-        animation-duration: 1s; /* Firefox requires this to apply the animation */
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: 100;
-        animation-delay: 1s;
       }
     }
 
@@ -188,7 +178,7 @@
       border-radius: 10px;
       background-color: rgb(2, 18, 15);
       animation-name: eyesAnimation;
-      animation-duration: 8s; /* Firefox requires this to apply the animation */
+      animation-duration: 8s; 
       animation-direction: alternate;
       animation-iteration-count: 10;
     }
@@ -202,7 +192,7 @@
       border-radius: 10px;
       background-color: rgb(2, 18, 15);
       animation-name: eyesAnimation;
-      animation-duration: 8s; /* Firefox requires this to apply the animation */
+      animation-duration: 8s; 
       animation-direction: alternate;
       animation-iteration-count: 10;
     }
