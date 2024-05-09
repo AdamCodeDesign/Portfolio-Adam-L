@@ -8,7 +8,7 @@ function App() {
       <section id="Home"><Hero/></section>
       <section id="Profile"><Profile/></section>
       <section id="Skills">Skills</section>
-      <section id="Certifications">Certifications</section>
+      <section id="Certificates">Certificates</section>
       <section id="Experience">Experience</section>
       <section id="Portfolio">Portfolio</section>
       <section id="Contact">Contact</section>

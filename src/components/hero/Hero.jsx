@@ -17,7 +17,7 @@ export default function Hero() {
     hidden: { opacity: 0 },
   };
 
-  const robotMesage =
+  const robotMessage =
     "HI, human! I would like to introduce You another human. He is my friend and looking for a job. Below, You will find some information about him.";
   return (
     <div className="container-hero">
@@ -70,7 +70,7 @@ export default function Hero() {
         variants={textAnimation}
       >
         {" "}
-        {[...robotMesage].map((letter, idx) => (
+        {[...robotMessage].map((letter, idx) => (
           <motion.span key={idx} variants={textAnimation}>
             {letter}
           </motion.span>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ToggleButton from "./toggleButton/ToggleButton";
 import Links from "./links/Links";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import "./sidebar.scss"
 
 export default function Sidebar() {
@@ -12,14 +12,14 @@ export default function Sidebar() {
       clipPath: "circle(1200px at 50px 50px)",
       transition: {
         type: "spring",
-        stiffness: 20,
+        stiffness: 30,
       },
       backgroundColor: "rgb(138, 239, 138)"
     },
     closed: {
       clipPath: "circle(30px at 50px 50px)",
       transition: {
-        delay: 0.5,
+        delay: 0.7,
         type: "spring",
         stiffness: 400,
         damping: 40,
