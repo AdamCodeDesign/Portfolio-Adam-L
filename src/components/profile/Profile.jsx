@@ -1,6 +1,7 @@
-
 import React from "react";
 import { motion } from "framer-motion";
+import photo from "../../assets/photoCV.jpeg";
+import "./profile.scss";
 
 export default function Profile() {
   const myName = 'const myName = "Adam Leszczyk"';
@@ -11,28 +12,37 @@ export default function Profile() {
   };
 
   return (
-    <div className="profile">
-        <div className="photo">
-          <motion.span initial="hidden" animate="visible" variants={variants}>
-            {[...myName].map((letter, idx) => (
-              <motion.span key={idx} variants={variants}>
-                {letter}
-              </motion.span>
-            ))}
-          </motion.span>
-          <motion.span
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-            style={{ fontSize: "0.5em" }}
-          >
-            {[...profession].map((letter, idx) => (
-              <motion.span key={idx} variants={variants}>
-                {letter}
-              </motion.span>
-            ))}
-          </motion.span>
+    <div className="container-profile">
+      <div className="profile">
+        <img src={photo} alt="photo" className="myphoto" />
+        <div className="about-me">
+          <div className="myname">
+            <motion.span
+              initial="hidden"
+              whileInView="visible"
+              variants={variants}
+            >
+              {[...myName].map((letter, idx) => (
+                <motion.span key={idx} variants={variants}>
+                  {letter}
+                </motion.span>
+              ))}
+            </motion.span>
+            <motion.span
+              initial="hidden"
+              whileInView="visible"
+              variants={variants}
+              style={{ fontSize: "0.5em" }}
+            >
+              {[...profession].map((letter, idx) => (
+                <motion.span key={idx} variants={variants}>
+                  {letter}
+                </motion.span>
+              ))}
+            </motion.span>
+          </div>
         </div>
+      </div>
     </div>
   );
 }

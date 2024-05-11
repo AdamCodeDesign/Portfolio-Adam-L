@@ -1,0 +1,25 @@
+.container-profile {
+  @media screen and (max-width: 640px) {
+    .profile {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      .myphoto {
+        width: 300px;
+      }
+
+      .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .myname {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
