@@ -1,10 +1,10 @@
 import React from "react";
 import { motion, transform } from "framer-motion";
 import "./hero.scss";
+import Navbar from "../navbar/Navbar";
 
 export default function Hero() {
-  const transformer = transform([0, 100], [0, 360]);
-  const rotate = transformer(10); 
+
   
 
   const robotAnimation = {
@@ -21,6 +21,7 @@ export default function Hero() {
     "HI, human! I would like to introduce You another human. He is my friend and looking for a job. Below, You will find some information about him.";
   return (
     <div className="container-hero">
+      <Navbar />
       <motion.div
         className="robot"
         drag
@@ -31,7 +32,7 @@ export default function Hero() {
       >
         <motion.div
           className="radar"
-          animate={{ rotate}}
+          animate={{ rotate:[0,20,0]}}
           transition={{
             animationTimingFunction: "linear",
             repeat: Infinity,
@@ -63,7 +64,7 @@ export default function Hero() {
           transition={{ ease: "easeInOut", duration: 4, repeat: Infinity }}
         ></motion.div>
       </motion.div>
-      <motion.span
+      <motion.div
         className="info"
         initial="hidden"
         animate="visible"
@@ -75,7 +76,7 @@ export default function Hero() {
             {letter}
           </motion.span>
         ))}
-      </motion.span>
+      </motion.div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function Sidebar() {
 
   const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: "circle(1200px at 30px 30px)",
       transition: {
         type: "spring",
         stiffness: 30,
@@ -17,7 +17,7 @@ export default function Sidebar() {
       backgroundColor: "rgb(138, 239, 138)"
     },
     closed: {
-      clipPath: "circle(30px at 50px 50px)",
+      clipPath: "circle(20px at 30px 30px)",
       transition: {
         delay: 0.7,
         type: "spring",

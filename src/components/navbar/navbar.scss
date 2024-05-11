@@ -1,0 +1,22 @@
+.navbar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  span {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .sites {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+
+    img {
+      height: 2.5vh;
+    }
+  }
+}

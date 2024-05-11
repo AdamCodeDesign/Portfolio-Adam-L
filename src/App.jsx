@@ -1,12 +1,19 @@
-import "./app.scss"
+import "./app.scss";
 import Hero from "./components/hero/Hero";
-import Profile from "./components/navbar/Profile";
+import Navbar from "./components/navbar/Navbar";
+import Profile from "./components/profile/Profile";
+import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return (
     <div className="container">
-      <section id="Home"><Hero/></section>
-      <section id="Profile"><Profile/></section>
+      <section id="Home">
+        <Hero />
+      </section>
+      <Sidebar />
+      <section id="Profile">
+        <Profile />
+      </section>
       <section id="Skills">Skills</section>
       <section id="Certificates">Certificates</section>
       <section id="Experience">Experience</section>

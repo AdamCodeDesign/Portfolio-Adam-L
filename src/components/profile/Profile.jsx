@@ -1,10 +1,6 @@
-import "./profile.scss";
-import git from "../../assets/github.png";
-import pubg from "../../assets/pubg.png";
-import CG from "../../assets/CG.svg";
+
 import React from "react";
 import { motion } from "framer-motion";
-import Sidebar from "../sidebar/Sidebar";
 
 export default function Profile() {
   const myName = 'const myName = "Adam Leszczyk"';
@@ -15,13 +11,11 @@ export default function Profile() {
   };
 
   return (
-    <div className="navbar">
-      <Sidebar />
-      <div className="wrapper">
-        <div className="logo">
+    <div className="profile">
+        <div className="photo">
           <motion.span initial="hidden" animate="visible" variants={variants}>
             {[...myName].map((letter, idx) => (
-              <motion.span key={idx} variants={variants} >
+              <motion.span key={idx} variants={variants}>
                 {letter}
               </motion.span>
             ))}
@@ -39,18 +33,6 @@ export default function Profile() {
             ))}
           </motion.span>
         </div>
-        <div className="sites">
-          <a href="#">
-            <img src={git} alt="git icon" />
-          </a>
-          <a href="#">
-            <img src={pubg} alt="pubg icon" />
-          </a>
-          <a href="#">
-            <img src={CG} alt="cheap games icon" />
-          </a>
-        </div>
-      </div>
     </div>
   );
 }
