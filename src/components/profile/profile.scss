@@ -37,9 +37,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 2em;
         .myname {
           display: flex;
           flex-direction: column;
+
+          .profession{
+            font-size: 0.5em;
+          }
         }
       }
     }
