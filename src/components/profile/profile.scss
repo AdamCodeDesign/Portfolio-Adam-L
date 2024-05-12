@@ -15,9 +15,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 2em;
         .myname {
           display: flex;
           flex-direction: column;
+          color: rgb(138, 239, 138);
+
+          .profession {
+            font-size: 0.5em;
+          }
         }
       }
     }
@@ -33,17 +39,30 @@
       }
 
       .about-me {
+        width: 40vw;
+        height: 400px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
         font-size: 2em;
         .myname {
+          height: 60px;
           display: flex;
           flex-direction: column;
+          align-items: flex-start;
+          color: rgb(165, 255, 127);
 
-          .profession{
+          .profession {
             font-size: 0.5em;
+          }
+        }
+        ol{
+          font-size: 1rem;
+          list-style: none;
+
+          li{
+            margin-bottom: 20px;
           }
         }
       }

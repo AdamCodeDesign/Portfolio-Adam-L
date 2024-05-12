@@ -7,7 +7,6 @@
   justify-content: space-between;
   margin: 0;
 
-
   .robot {
     position: relative;
     width: 250px;
@@ -16,11 +15,11 @@
     background-color: white;
 
     @keyframes radarAnimation {
-      from{
+      from {
         transform: rotate(-180deg);
       }
-   
-      to{
+
+      to {
         transform: rotate(180deg);
       }
     }
@@ -57,7 +56,6 @@
       width: 10px;
       height: 10px;
       background-color: white;
-      
 
       &::after {
         content: "";
@@ -67,7 +65,6 @@
         width: 10px;
         height: 10px;
         background-color: white;
-
       }
       &::before {
         content: "";
@@ -77,7 +74,7 @@
         width: 10px;
         height: 10px;
         background-color: white;
-        animation-name: radarAnimation ;
+        animation-name: radarAnimation;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
@@ -110,7 +107,7 @@
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
         animation-name: talkAnimation;
-        animation-duration: 0.5s; 
+        animation-duration: 0.5s;
         animation-timing-function: ease-in;
         animation-iteration-count: 100;
         animation-delay: 0.4s;
@@ -124,7 +121,7 @@
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
         animation-name: talkAnimation;
-        animation-duration: 0.7s; 
+        animation-duration: 0.7s;
         animation-timing-function: ease;
         animation-iteration-count: 100;
         animation-delay: 0.5s;
@@ -138,7 +135,7 @@
         border-radius: 5px;
         background-color: rgb(2, 18, 15);
         animation-name: talkAnimation;
-        animation-duration: 0.8s; 
+        animation-duration: 0.8s;
         animation-timing-function: ease-in;
         animation-iteration-count: 100;
         animation-delay: 0.6s;
@@ -177,7 +174,7 @@
       border-radius: 10px;
       background-color: rgb(2, 18, 15);
       animation-name: eyesAnimation;
-      animation-duration: 8s; 
+      animation-duration: 8s;
       animation-direction: alternate;
       animation-iteration-count: 10;
     }
@@ -191,7 +188,7 @@
       border-radius: 10px;
       background-color: rgb(2, 18, 15);
       animation-name: eyesAnimation;
-      animation-duration: 8s; 
+      animation-duration: 8s;
       animation-direction: alternate;
       animation-iteration-count: 10;
     }
@@ -215,8 +212,20 @@
       background-color: white;
     }
   }
-  .info{
+  .info {
     padding-bottom: 100px;
     padding: 0 20px;
+    .text1 {
+      color: rgb(138, 239, 138);
+      font-weight: bold;
+    }
+    .text3 {
+      color: rgb(72, 115, 218);
+      font-weight: bold;
+    }
+    .text5 {
+      color: rgb(183, 149, 71);
+      font-weight: bold;
+    }
   }
 }

@@ -76,13 +76,13 @@ export default function Hero() {
           <motion.span
             key={idx}
             variants={textAnimation}
-            style={{ color: "rgb(138, 239, 138)", fontWeight: "bold" }}
+            className="text1"
           >
             {letter}
           </motion.span>
         ))}
         {[...text2].map((letter, idx) => (
-          <motion.span key={idx} variants={textAnimation}>
+          <motion.span key={idx} variants={textAnimation} className="text2">
             {letter}
           </motion.span>
         ))}
@@ -90,13 +90,13 @@ export default function Hero() {
           <motion.span
             key={idx}
             variants={textAnimation}
-            style={{ color: "rgb(72, 115, 218)", fontWeight: "bold" }}
+            className="text3"
           >
             {letter}
           </motion.span>
         ))}
         {[...text4].map((letter, idx) => (
-          <motion.span key={idx} variants={textAnimation}>
+          <motion.span key={idx} variants={textAnimation} className="text4">
             {letter}
           </motion.span>
         ))}
@@ -104,7 +104,7 @@ export default function Hero() {
           <motion.span
             key={idx}
             variants={textAnimation}
-            style={{ color: "rgb(183, 149, 71)", fontWeight: "bold" }}
+            className="text5"
           >
             {letter}
           </motion.span>
