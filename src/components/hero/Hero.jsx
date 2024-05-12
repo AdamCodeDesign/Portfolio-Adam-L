@@ -4,9 +4,6 @@ import "./hero.scss";
 import Navbar from "../navbar/Navbar";
 
 export default function Hero() {
-
-  
-
   const robotAnimation = {
     height: { top: "30px" },
     low: { y: [10, 0, 10] },
@@ -16,9 +13,13 @@ export default function Hero() {
     visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
     hidden: { opacity: 0 },
   };
+  const text1 = "Hello, ";
+  const text2 =
+    "nice to see you! I would like to introduce you to a candidate for the position of ";
+  const text3 = "Frontend Developer. ";
+  const text4 = "Below you will find more ";
+  const text5 = "information about him. ";
 
-  const robotMessage =
-    "HI, human! I would like to introduce You another human. He is my friend and looking for a job. Below, You will find some information about him.";
   return (
     <div className="container-hero">
       <Navbar />
@@ -32,7 +33,7 @@ export default function Hero() {
       >
         <motion.div
           className="radar"
-          animate={{ rotate:[0,20,0]}}
+          animate={{ rotate: [0, 20, 0] }}
           transition={{
             animationTimingFunction: "linear",
             repeat: Infinity,
@@ -71,8 +72,40 @@ export default function Hero() {
         variants={textAnimation}
       >
         {" "}
-        {[...robotMessage].map((letter, idx) => (
+        {[...text1].map((letter, idx) => (
+          <motion.span
+            key={idx}
+            variants={textAnimation}
+            style={{ color: "rgb(138, 239, 138)", fontWeight: "bold" }}
+          >
+            {letter}
+          </motion.span>
+        ))}
+        {[...text2].map((letter, idx) => (
           <motion.span key={idx} variants={textAnimation}>
+            {letter}
+          </motion.span>
+        ))}
+        {[...text3].map((letter, idx) => (
+          <motion.span
+            key={idx}
+            variants={textAnimation}
+            style={{ color: "rgb(72, 115, 218)", fontWeight: "bold" }}
+          >
+            {letter}
+          </motion.span>
+        ))}
+        {[...text4].map((letter, idx) => (
+          <motion.span key={idx} variants={textAnimation}>
+            {letter}
+          </motion.span>
+        ))}
+        {[...text5].map((letter, idx) => (
+          <motion.span
+            key={idx}
+            variants={textAnimation}
+            style={{ color: "rgb(183, 149, 71)", fontWeight: "bold" }}
+          >
             {letter}
           </motion.span>
         ))}
