@@ -45,7 +45,7 @@ export default function Profile() {
       opacity: 1,
     },
     hidden: {
-      x: -50,
+      x: -30,
       opacity: 0,
     },
   };
