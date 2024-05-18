@@ -6,251 +6,256 @@
   align-items: center;
   justify-content: space-between;
   margin: 0;
+  padding-bottom: 10px;
 
-  .robot {
-    position: relative;
-    width: 250px;
-    height: 200px;
-    border-radius: 30%;
-    background-color: white;
-
-    @keyframes radarAnimation {
-      from {
-        transform: rotate(-180deg);
-      }
-
-      to {
-        transform: rotate(180deg);
-      }
-    }
-    @keyframes eyesAnimation {
-      0% {
-        height: 100px;
-      }
-      50% {
-        height: 70px;
-        top: 60px;
-      }
-      100% {
-        height: 100px;
-      }
-    }
-
-    @keyframes talkAnimation {
-      0% {
-        height: 10px;
-      }
-      50% {
-        height: 25px;
-        top: 2px;
-      }
-      100% {
-        height: 10px;
-      }
-    }
-
-    .radar {
-      position: absolute;
-      top: -30px;
-      left: 120px;
-      width: 10px;
-      height: 10px;
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 4;
+    .robot {
+      position: relative;
+      width: 250px;
+      height: 200px;
+      border-radius: 30%;
       background-color: white;
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: -20px;
-        left: 20px;
-        width: 10px;
-        height: 10px;
-        background-color: white;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: -40px;
-        left: 40px;
-        width: 10px;
-        height: 10px;
-        background-color: white;
-        animation-name: radarAnimation;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-      }
-    }
+      @keyframes radarAnimation {
+        from {
+          transform: rotate(-180deg);
+        }
 
-    .smile {
-      position: absolute;
-      top: 160px;
-      left: 30px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      .smile1 {
-        position: absolute;
-        top: 7px;
-        left: 70px;
-        width: 5px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(2, 18, 15);
+        to {
+          transform: rotate(180deg);
+        }
       }
-      .smile2 {
-        position: absolute;
-        top: 10px;
-        left: 80px;
-        width: 5px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(2, 18, 15);
-        animation-name: talkAnimation;
-        animation-duration: 0.5s;
-        animation-timing-function: ease-in;
-        animation-iteration-count: 100;
-        animation-delay: 0.4s;
+      @keyframes eyesAnimation {
+        0% {
+          height: 100px;
+        }
+        50% {
+          height: 70px;
+          top: 60px;
+        }
+        100% {
+          height: 100px;
+        }
       }
-      .smile3 {
-        position: absolute;
-        top: 10px;
-        left: 90px;
-        width: 5px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(2, 18, 15);
-        animation-name: talkAnimation;
-        animation-duration: 0.7s;
-        animation-timing-function: ease;
-        animation-iteration-count: 100;
-        animation-delay: 0.5s;
+
+      @keyframes talkAnimation {
+        0% {
+          height: 10px;
+        }
+        50% {
+          height: 25px;
+          top: 2px;
+        }
+        100% {
+          height: 10px;
+        }
       }
-      .smile4 {
+
+      .radar {
         position: absolute;
-        top: 10px;
-        left: 100px;
-        width: 5px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(2, 18, 15);
-        animation-name: talkAnimation;
-        animation-duration: 0.8s;
-        animation-timing-function: ease-in;
-        animation-iteration-count: 100;
-        animation-delay: 0.6s;
-      }
-      .smile5 {
-        position: absolute;
-        top: 10px;
-        left: 110px;
-        width: 5px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: rgb(2, 18, 15);
-        animation-name: talkAnimation;
-        animation-duration: 0.7s;
-        animation-timing-function: ease;
-        animation-iteration-count: 100;
-        animation-delay: 0.7s;
-      }
-      .smile6 {
-        position: absolute;
-        top: 7px;
+        top: -30px;
         left: 120px;
-        width: 5px;
+        width: 10px;
         height: 10px;
-        border-radius: 5px;
+        background-color: white;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -20px;
+          left: 20px;
+          width: 10px;
+          height: 10px;
+          background-color: white;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: -40px;
+          left: 40px;
+          width: 10px;
+          height: 10px;
+          background-color: white;
+          animation-name: radarAnimation;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+      }
+
+      .smile {
+        position: absolute;
+        top: 160px;
+        left: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .smile1 {
+          position: absolute;
+          top: 7px;
+          left: 70px;
+          width: 5px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: rgb(2, 18, 15);
+        }
+        .smile2 {
+          position: absolute;
+          top: 10px;
+          left: 80px;
+          width: 5px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: rgb(2, 18, 15);
+          animation-name: talkAnimation;
+          animation-duration: 0.5s;
+          animation-timing-function: ease-in;
+          animation-iteration-count: 100;
+          animation-delay: 0.4s;
+        }
+        .smile3 {
+          position: absolute;
+          top: 10px;
+          left: 90px;
+          width: 5px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: rgb(2, 18, 15);
+          animation-name: talkAnimation;
+          animation-duration: 0.7s;
+          animation-timing-function: ease;
+          animation-iteration-count: 100;
+          animation-delay: 0.5s;
+        }
+        .smile4 {
+          position: absolute;
+          top: 10px;
+          left: 100px;
+          width: 5px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: rgb(2, 18, 15);
+          animation-name: talkAnimation;
+          animation-duration: 0.8s;
+          animation-timing-function: ease-in;
+          animation-iteration-count: 100;
+          animation-delay: 0.6s;
+        }
+        .smile5 {
+          position: absolute;
+          top: 10px;
+          left: 110px;
+          width: 5px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: rgb(2, 18, 15);
+          animation-name: talkAnimation;
+          animation-duration: 0.7s;
+          animation-timing-function: ease;
+          animation-iteration-count: 100;
+          animation-delay: 0.7s;
+        }
+        .smile6 {
+          position: absolute;
+          top: 7px;
+          left: 120px;
+          width: 5px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: rgb(2, 18, 15);
+        }
+      }
+
+      .eye1 {
+        position: absolute;
+        top: 40px;
+        left: 60px;
+        width: 20px;
+        height: 100px;
+        border-radius: 10px;
         background-color: rgb(2, 18, 15);
+        animation-name: eyesAnimation;
+        animation-duration: 8s;
+        animation-direction: alternate;
+        animation-iteration-count: 10;
       }
-    }
 
-    .eye1 {
-      position: absolute;
-      top: 40px;
-      left: 60px;
-      width: 20px;
-      height: 100px;
-      border-radius: 10px;
-      background-color: rgb(2, 18, 15);
-      animation-name: eyesAnimation;
-      animation-duration: 8s;
-      animation-direction: alternate;
-      animation-iteration-count: 10;
-    }
+      .eye2 {
+        position: absolute;
+        top: 40px;
+        left: 175px;
+        width: 20px;
+        height: 100px;
+        border-radius: 10px;
+        background-color: rgb(2, 18, 15);
+        animation-name: eyesAnimation;
+        animation-duration: 8s;
+        animation-direction: alternate;
+        animation-iteration-count: 10;
+      }
 
-    .eye2 {
-      position: absolute;
-      top: 40px;
-      left: 175px;
-      width: 20px;
-      height: 100px;
-      border-radius: 10px;
-      background-color: rgb(2, 18, 15);
-      animation-name: eyesAnimation;
-      animation-duration: 8s;
-      animation-direction: alternate;
-      animation-iteration-count: 10;
-    }
-
-    .ear1 {
-      position: absolute;
-      top: 30px;
-      left: -30px;
-      width: 20px;
-      height: 50px;
-      border-radius: 10px;
-      background-color: white;
-    }
-    .ear2 {
-      position: absolute;
-      top: 30px;
-      left: 260px;
-      width: 20px;
-      height: 50px;
-      border-radius: 10px;
-      background-color: white;
-    }
-  }
-  @media screen and (min-width: 640px) {
-    .info {
-      width: 640px;
-      padding-bottom: 100px;
-      padding: 0 20px;
-      .text1 {
-        color: rgb(138, 239, 138);
-        font-weight: bold;
+      .ear1 {
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        width: 20px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: white;
       }
-      .text3 {
-        color: rgb(72, 115, 218);
-        font-weight: bold;
-      }
-      .text5 {
-        color: rgb(183, 149, 71);
-        font-weight: bold;
+      .ear2 {
+        position: absolute;
+        top: 30px;
+        left: 260px;
+        width: 20px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: white;
       }
     }
-  }
-  @media screen and (max-width: 640px) {
-    .info {
-      width: calc(100vw - 20px);
-      padding-bottom: 100px;
-      padding: 0 20px;
-      .text1 {
-        color: rgb(138, 239, 138);
-        font-weight: bold;
-      }
-      .text3 {
-        color: rgb(72, 115, 218);
-        font-weight: bold;
-      }
-      .text5 {
-        color: rgb(183, 149, 71);
-        font-weight: bold;
+    @media screen and (min-width: 640px) {
+      .info {
+        width: 640px;
+        padding-bottom: 100px;
+        padding: 0 20px;
+        .text1 {
+          color: rgb(138, 239, 138);
+          font-weight: bold;
+        }
+        .text3 {
+          color: rgb(72, 115, 218);
+          font-weight: bold;
+        }
+        .text5 {
+          color: rgb(183, 149, 71);
+          font-weight: bold;
+        }
       }
     }
-  }
-  .next-info{
-    height: 20px;
+    @media screen and (max-width: 640px) {
+      .info {
+        width: calc(100vw - 20px);
+        padding-bottom: 100px;
+        padding: 0 20px;
+        .text1 {
+          color: rgb(138, 239, 138);
+          font-weight: bold;
+        }
+        .text3 {
+          color: rgb(72, 115, 218);
+          font-weight: bold;
+        }
+        .text5 {
+          color: rgb(183, 149, 71);
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
