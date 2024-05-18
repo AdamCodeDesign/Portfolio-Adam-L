@@ -1,13 +1,12 @@
 import "./app.scss";
 import Hero from "./components/hero/Hero";
-import Navbar from "./components/navbar/Navbar";
 import Profile from "./components/profile/Profile";
 import Sidebar from "./components/sidebar/Sidebar";
 
 function App() {
   return (
     <div className="container">
-      <section id="Home">
+      <section id="Hero">
         <Hero />
       </section>
       <Sidebar />

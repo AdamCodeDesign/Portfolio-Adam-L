@@ -27,7 +27,7 @@ export default function Links() {
   };
 
   const menuLinks = [
-    "Home",
+    "Hero",
     "Profile",
     "Skills",
     "Certificates",

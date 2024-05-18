@@ -110,6 +110,7 @@ export default function Hero() {
           </motion.span>
         ))}
       </motion.div>
+      <div className="next-info"></div>
     </div>
   );
 }
