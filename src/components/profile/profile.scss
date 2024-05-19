@@ -1,5 +1,5 @@
 .container-profile {
-  @media screen and (orientation: portrait ) {
+  @media screen and (max-width:575px) {
     .profile {
       height: 100vh;
       display: flex;
@@ -7,8 +7,7 @@
       justify-content: space-evenly;
       align-items: center;
       .myphoto {
-
-        width: 240px;
+        width: 280px;
       }
 
       .about-me {
@@ -16,7 +15,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 1.7em;
+        font-size: 1.5rem;
+        padding: 20px 40px;
         .myname {
             height: 60px;
             display: flex;
@@ -31,28 +31,27 @@
         ol{
             font-size: 0.5em;
             list-style: none;
-            margin: 10px 20px;
   
             li{
-              margin-bottom: 20px;
+              margin-bottom: 15px;
             }
           }
       }
     }
   }
-  @media screen and (orientation: landscape) {
+  @media screen and (min-width:576px) {
     .profile {
       height: 100vh;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       .myphoto {
-        height: 70vh;
+        height: 90vh;
       }
 
       .about-me {
         width: 40vw;
-        height: 400px;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -70,11 +69,11 @@
           }
         }
         ol{
-          font-size: 1rem;
+          font-size: 0.5em;
           list-style: none;
 
           li{
-            margin-bottom: 20px;
+            margin-bottom: 15px;
           }
         }
       }
