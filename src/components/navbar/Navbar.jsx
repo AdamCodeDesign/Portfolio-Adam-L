@@ -8,13 +8,13 @@ export default function Navbar() {
   return (
     <div className="navbar">
         <div className="sites">
-          <a href="#">
+          <a href="https://github.com/AdamCodeDesign">
             <img src={git} alt="git icon" />
           </a>
-          <a href="#">
+          <a href="https://pubg-score.netlify.app/">
             <img src={pubg} alt="pubg icon" />
           </a>
-          <a href="#">
+          <a href="https://cheap-games.netlify.app/">
             <img src={CG} alt="cheap games icon" />
           </a>
         </div>
