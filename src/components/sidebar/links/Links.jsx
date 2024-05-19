@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function Links() {
+export default function Links({setOpen}) {
   const variants = {
     open: {
       transition: {
@@ -48,6 +48,7 @@ export default function Links() {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.97 }}
+          onClick={()=> setOpen(false)}
         >
           {item}
         </motion.a>
