@@ -1,6 +1,6 @@
 import React from "react";
 import { delay, motion } from "framer-motion";
-import photo from "../../assets/photoCV.jpeg";
+import photo from "../../assets/portfolioPhoto.jpeg";
 import "./profile.scss";
 
 export default function Profile() {

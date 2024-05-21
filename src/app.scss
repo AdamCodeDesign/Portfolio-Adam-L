@@ -21,6 +21,9 @@ a {
 
 .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 
   @keyframes afterAnimation {
     from {

@@ -2,6 +2,7 @@ import "./app.scss";
 import Hero from "./components/hero/Hero";
 import Profile from "./components/profile/Profile";
 import Sidebar from "./components/sidebar/Sidebar";
+import Skills from "./components/skills/Skills";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <section id="Profile">
         <Profile />
       </section>
-      <section id="Skills">Skills</section>
+      <section id="Skills"><Skills/></section>
       <section id="Certificates">Certificates</section>
       <section id="Experience">Experience</section>
       <section id="Portfolio">Portfolio</section>

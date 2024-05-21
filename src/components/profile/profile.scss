@@ -1,5 +1,5 @@
 .container-profile {
-  @media screen and (max-width:575px) {
+  @media screen and (max-width: 575px) {
     .profile {
       height: 100vh;
       display: flex;
@@ -7,7 +7,8 @@
       justify-content: space-evenly;
       align-items: center;
       .myphoto {
-        width: 280px;
+        width: 60vw;
+        border-radius: 50%;
       }
 
       .about-me {
@@ -18,47 +19,48 @@
         font-size: 1.5rem;
         padding: 20px 40px;
         .myname {
-            height: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: rgb(165, 255, 127);
+          height: 60px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: rgb(165, 255, 127);
 
           .profession {
             font-size: 0.5em;
           }
         }
-        ol{
-            font-size: 0.5em;
-            list-style: none;
-  
-            li{
-              margin-bottom: 15px;
-            }
+        ol {
+          font-size: 0.5em;
+          list-style: none;
+
+          li {
+            margin-bottom: 15px;
           }
+        }
       }
     }
   }
-  @media screen and (min-width:576px) {
+  @media screen and (min-width: 576px) {
     .profile {
       height: 100vh;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       .myphoto {
-        height: 90vh;
+        border-radius: 50%;
+        height: 70vh;
       }
 
       .about-me {
-        width: 40vw;
-        height: 90vh;
+        width: 40%;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
         font-size: 1.5rem;
+        gap: 20px;
         .myname {
-        //   height: 60px;
+          //   height: 60px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -68,11 +70,11 @@
             font-size: 0.5em;
           }
         }
-        ol{
+        ol {
           font-size: 0.5em;
           list-style: none;
 
-          li{
+          li {
             margin-bottom: 15px;
           }
         }
