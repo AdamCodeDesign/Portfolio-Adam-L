@@ -1,3 +1,67 @@
-.skills{
-    text-align: center;
+.skills-container {
+  max-width: 1366px;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+//   margin-top: 100px;
+
+  .title {
+    font-size: 3em;
+    margin-bottom: 60px;
+  }
+  .skills-icons {
+    
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+
+    div {
+      max-height: 120px;
+      max-width: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+
+      img {
+        height: 80px;
+      }
+      span {
+        text-align: center;
+      }
+
+      .sass {
+        color: magenta;
+        font-size: 80px;
+      }
+
+      .react {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        font-size: 80px;
+        color: rgb(0, 206, 243);
+        justify-content: center;
+        align-items: center;
+        animation: rotate 20s linear infinite;
+      }
+    }
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

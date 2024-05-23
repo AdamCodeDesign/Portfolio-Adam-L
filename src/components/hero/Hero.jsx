@@ -22,7 +22,6 @@ export default function Hero() {
 
   return (
     <div className="container-hero">
-      <Navbar />
       <div className="hero">
         <div className="robot-container">
           <motion.div
