@@ -3,28 +3,29 @@
   height: 1200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-//   margin-top: 100px;
+  gap: 80px;
 
   .title {
-    font-size: 3em;
-    margin-bottom: 60px;
+    font-size: 2em;
   }
   .skills-icons {
-    
     width: 100%;
     margin: 0 auto;
     font-size: 1em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 50px;
     align-items: center;
+    @media screen and (max-width:640px) {
+      justify-content: center;
+    }
 
     div {
-      max-height: 120px;
-      max-width: 120px;
+      height: 120px;
+      width: 120px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
