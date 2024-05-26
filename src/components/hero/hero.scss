@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-evenly;
   margin: 0;
+  
   @media screen and (max-height: 400px) {
     justify-content: center;
     height: 320px;

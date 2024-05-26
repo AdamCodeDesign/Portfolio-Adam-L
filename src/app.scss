@@ -10,7 +10,9 @@ html {
 }
 
 body {
-  background-color: rgb(2, 29, 6);
+  background-image: linear-gradient(rgb(2, 29, 6),70%,rgb(49, 133, 13));
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -36,22 +38,7 @@ a {
     }
   }
 
-  &::before {
-    content: "";
-    text-align: center;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: rgb(2, 29, 6);
-    border: 1px solid rgb(165, 255, 127);
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    box-shadow: 0px 0px 400px 100px rgb(79, 115, 14);
-    animation-name: beforeAnimation;
-    animation-timeline: scroll();
-    z-index: -1;
-  }
+
 
   section {
     max-height: 100vh;
