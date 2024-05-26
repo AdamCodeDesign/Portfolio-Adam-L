@@ -32,13 +32,8 @@ a {
       scale: 1;
     }
     to {
-scale: 1.5;    }
-  }
-  @keyframes beforeAnimation {
-    from {
-scale: 1;    }
-    to {
-scale: 1.5;    }
+      scale: 2;
+    }
   }
 
   &::after {
@@ -50,7 +45,7 @@ scale: 1.5;    }
     background-color: rgb(165 255 0/50%);
     position: fixed;
     bottom: 100%;
-    right: -100px;
+    right: -150px;
     border-radius: 50%;
     box-shadow: 0px 0px 800px 50px rgb(165 255 0.5);
     animation-name: afterAnimation;
@@ -63,16 +58,15 @@ scale: 1.5;    }
     opacity: 0.5;
     width: 100px;
     height: 100px;
-    background-color: rgb(165 255 0.5);
+    background-color: rgb(165 255 0/50%);
     position: fixed;
-    top: 100%;
-    left: -300px;
+    bottom: 0%;
+    left: -150px;
     border-radius: 50%;
-   
-    box-shadow: 0px 0px 1000px 350px rgb(165 255 50%);
-    animation-name: beforeAnimation;
-    z-index: -1;
+    box-shadow: 0px 0px 800px 50px rgb(165 255 0.5);
+    animation-name: afterAnimation;
     animation-timeline: scroll();
+    z-index: -1;
   }
 
   section {
