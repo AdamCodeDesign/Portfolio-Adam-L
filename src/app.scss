@@ -50,25 +50,23 @@ a {
     opacity: 0.5;
     width: 5vw;
     height: 5vw;
-    background-color: rgb(15, 183, 93);
+    background-color: rgb(165 255 0/50%);
     position: fixed;
     bottom: 100%;
     right: -110px;
     border-radius: 50%;
     box-shadow: 0px 0px 500px 100px rgb(165 255 0/80%);
     animation-name: afterAnimation;
-    animation-duration: 1s; /* Firefox requires this to apply the animation */
-    animation-direction: normal;
-    animation-timeline: scroll(y);
+    animation-timeline: scroll();
     z-index: -1;
   }
   &::before {
     content: "";
     text-align: center;
     opacity: 0.5;
-    width: 5vw;
-    height: 5vw;
-    background-color: rgb(165, 255, 127);
+    width: 1px;
+    height: 1px;
+    background-color: rgb(165 255 0/50%);
     position: fixed;
     top: 100%;
     left: 310px;
@@ -77,10 +75,8 @@ a {
     box-shadow: 0px 0px 530px 250px rgb(165 255 0/50%);
     transition: rotate(90deg);
     animation-name: beforeAnimation;
-    animation-duration: 1m; /* Firefox requires this to apply the animation */
-    animation-direction: normal;
     z-index: -1;
-    animation-timeline: scroll(y);
+    animation-timeline: scroll();
   }
 
   section {
