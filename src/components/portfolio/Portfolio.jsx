@@ -6,6 +6,7 @@ import CGScreen from "../../assets/CGScreen.png";
 export default function Portfolio() {
   return (
     <div className="container-portfolio">
+      <div className="title">My projects</div>
       <div className="cheap-games card">
         <div className="imgContainer">
           <a href="https://cheap-games.netlify.app/">
@@ -19,14 +20,15 @@ export default function Portfolio() {
             <span>2023</span>
           </div>
           <div className="description">
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
+            <p>Video Game Store Interface</p>
+            <div className="tags">
+              {" "}
+              <div>react</div>
+              <div>sass</div>
+              <div>react router</div>
+              <div>rest Api</div>
+              <div>supabase</div>
+            </div>
           </div>
         </div>
       </div>
@@ -45,10 +47,14 @@ export default function Portfolio() {
             <span>2024</span>
           </div>{" "}
           <div className="description">
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
-            <p>tutaj bedzie opis projektu</p>
+            <p>PUBG - stats - SPA</p>
+            <div className="tags">
+              {" "}
+              <div>react</div>
+              <div>material UI</div>
+              <div>react router</div>
+              <div>rest Api</div>
+            </div>
           </div>
         </div>
       </div>
