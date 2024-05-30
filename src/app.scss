@@ -1,7 +1,10 @@
+@use "sass:color";
+
 html {
   // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +13,75 @@ html {
 }
 
 body {
-  background-color: black;
-  background-image: linear-gradient(-45deg,rgb(2, 29, 6),70%,rgb(98, 100, 98));
+  background-color: rgb(6, 32, 17);
+  background-image: linear-gradient(
+    -45deg,
+    rgb(2, 29, 6),
+    70%,
+    rgb(98, 100, 98)
+  );
   background-size: cover;
   background-attachment: fixed;
   color: white;
-  // animation-name: beforeAnimation;
-  animation-timeline: scroll();
+  position: relative;
   z-index: -1;
+
+  @keyframes beforeAnimation {
+    0%{
+      top: 40%;
+      right: 100%;
+    }
+    50%{
+      top: 20%;
+      right: 50%;
+    }
+    100%{
+      top: 40%;
+      right: 0%;
+    }
+  }
+  @keyframes afterAnimation {
+    0%{
+      top: 10%;
+      right: 60%;
+    }
+    50%{
+      top: 20%;
+      right: 10%;
+    }
+    100%{
+      top: 40%;
+      right: 0%;
+    }
+  }
+
+  // &::before {
+  //   content: "";
+  //   height: 50px;
+  //   width: 50px;
+  //   background-color: lighten(rgb(89, 90, 89), 47%);
+  //   border-radius: 50%;
+  //   position: fixed;
+  //   top: 40%;
+  //   right: 100%;
+  //   box-shadow: 0 0 180px 170px lighten(rgb(89, 90, 89), 50%);
+  //   animation-name: beforeAnimation;
+  //   animation-timeline: scroll();
+  // }
+  // &::after {
+  //   content: "JS";
+  //   // height: 50px;
+  //   // width: 50px;
+  //   background-color: transparent;
+  //   opacity: 0.5;
+  //   // border-radius: 50%;
+  //   position: fixed;
+  //   top: 10%;
+  //   right: 60%;
+  //   // box-shadow: 0 0 80px 70px lighten(rgb(89, 90, 89), 50%);
+  //   animation-name: afterAnimation;
+  //   animation-timeline: scroll();
+  // }
 }
 
 a {
@@ -33,16 +97,7 @@ a {
   align-items: center;
   gap: 100px;
 
-  @keyframes beforeAnimation {
-    from {
-      background-image: linear-gradient(45deg,rgb(2, 29, 6),70%,rgb(49, 133, 13));
-    }
-    to {
-      background-image: linear-gradient(90deg,rgb(2, 29, 6),70%,rgb(49, 133, 13));
-    }
-  }
-
-
+ 
 
   section {
     max-height: 100vh;

@@ -5,12 +5,12 @@ import Navbar from "../navbar/Navbar";
 
 export default function Hero() {
   const robotAnimation = {
-    height: { top: "30px" },
-    low: { y: [10, 0, 10] },
+    height: { top: "40px" },
+    low: { y: [20, 0, 20] },
   };
 
   const textAnimation = {
-    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+    visible: { opacity: 1, transition: { staggerChildren: 0.05 } },
     hidden: { opacity: 0 },
   };
   const text1 = "Hello, ";

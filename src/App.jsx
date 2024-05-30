@@ -1,4 +1,5 @@
 import "./app.scss";
+import BgdAnimations from "./components/bgdAnimations/BgdAnimations";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <Navbar/>
+      <BgdAnimations/>
     <div className="container">
       <section id="Hero">
         <Hero />

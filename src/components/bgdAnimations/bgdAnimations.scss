@@ -1,0 +1,96 @@
+.container-animations {
+  width: 0;
+  height: 0;
+  z-index: -1;
+  color: darken(rgb(98, 100, 98), 15%);
+  font-size: 10px;
+
+  @keyframes bgdAnimation {//tu zrobic mixina z propsami 
+    from {
+      transform: translate(0%) rotate(-5deg);
+    }
+   
+    to{
+      transform: translate(-30%) rotate(-25deg);
+    }
+  }
+
+  div {
+    text-shadow: 1px 0.05em 0px black;
+    opacity: 0.5;
+  }
+  .react {
+    position: fixed;
+    height: 30px;
+    top: 25%;
+    left: 14%;
+    transform: rotate(-5deg);
+    font-size: 8em;
+    animation-name: bgdAnimation;
+    animation-timeline: scroll();
+  }
+  .JS {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 70%;
+    transform: rotate(15deg);
+    font-size: 8em;
+  }
+  .git {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 10%;
+    left: 45%;
+    transform: rotate(5deg);
+    font-size: 6em;
+  }
+  .sass {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 60%;
+    left: 15%;
+    transform: rotate(-28deg);
+    font-size: 4em;
+  }
+  .html {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 25%;
+    left: 80%;
+    transform: rotate(-15deg);
+    font-size: 4em;
+  }
+  .RWD {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 90%;
+    left: 60%;
+    transform: rotate(-15deg);
+    font-size: 2.5em;
+  }
+  .MUI {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 5%;
+    left: 60%;
+    transform: rotate(-15deg);
+    font-size: 3em;
+  }
+
+  .api {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 70%;
+    left: 35%;
+    transform: rotate(-5deg);
+    font-size: 3em;
+  }
+}

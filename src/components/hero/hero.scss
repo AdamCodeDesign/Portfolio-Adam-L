@@ -41,14 +41,14 @@
         }
         @keyframes eyesAnimation {
           0% {
-            height: 100px;
+            height: 80px;
           }
           50% {
-            height: 70px;
-            top: 60px;
+            height: 60px;
+            top: 50px;
           }
           100% {
-            height: 100px;
+            height: 80px;
           }
         }
 
@@ -125,7 +125,7 @@
             animation-name: talkAnimation;
             animation-duration: 0.5s;
             animation-timing-function: ease-in;
-            animation-iteration-count: 100;
+            animation-iteration-count: 16;
             animation-delay: 0.4s;
           }
           .smile3 {
@@ -137,9 +137,9 @@
             border-radius: 5px;
             background-color: rgb(2, 18, 15);
             animation-name: talkAnimation;
-            animation-duration: 0.7s;
+            animation-duration: 0.6s;
             animation-timing-function: ease;
-            animation-iteration-count: 100;
+            animation-iteration-count: 14;
             animation-delay: 0.5s;
           }
           .smile4 {
@@ -151,9 +151,9 @@
             border-radius: 5px;
             background-color: rgb(2, 18, 15);
             animation-name: talkAnimation;
-            animation-duration: 0.8s;
+            animation-duration: 0.7s;
             animation-timing-function: ease-in;
-            animation-iteration-count: 100;
+            animation-iteration-count: 12;
             animation-delay: 0.6s;
           }
           .smile5 {
@@ -165,9 +165,9 @@
             border-radius: 5px;
             background-color: rgb(2, 18, 15);
             animation-name: talkAnimation;
-            animation-duration: 0.7s;
+            animation-duration: 0.6s;
             animation-timing-function: ease;
-            animation-iteration-count: 100;
+            animation-iteration-count: 14;
             animation-delay: 0.7s;
           }
           .smile6 {
