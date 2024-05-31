@@ -4,29 +4,28 @@ html {
   // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
-:root {
-  background: linear-gradient(
-    -45deg,
-    rgb(2, 29, 6),
-    70%,
-    rgb(98, 100, 98)
-  );
-  background-attachment: fixed;
-}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Source Code Pro", monospace;
 }
-
-.bgd{
-  // background-color: rgb(6, 32, 17);
- 
-  color: white;
+.bgd {
+  position: relative;
+  color: whitesmoke;
+}
+.bgd::before {
+  content: "";
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgb(6, 32, 17);
+  background: linear-gradient(-45deg, rgb(2, 29, 6), 70%, rgb(98, 100, 98));
+  background-size: cover;
   z-index: -1;
-  height: 100vh;
-  width: 100vw;
 
   @keyframes beforeAnimation {
     0% {
