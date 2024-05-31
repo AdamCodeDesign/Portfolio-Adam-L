@@ -16,10 +16,10 @@ function App() {
         <section id="Hero">
           <Hero />
         </section>
-        <Sidebar />
         <section id="Profile">
           <Profile />
         </section>
+        <Sidebar />
         <section id="Skills">
           <Skills />
         </section>

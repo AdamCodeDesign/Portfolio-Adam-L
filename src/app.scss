@@ -1,7 +1,7 @@
 @use "sass:color";
 
 html {
-  // scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow: hidden;
 }
@@ -14,15 +14,29 @@ html {
 }
 .bgd {
   position: relative;
-  display: block;
+  // display: block;
   height: 100vh;
+  @media (max-device-aspect-ratio: 3/4) {
+    height: calc(100vw * 1.333 - 9%);
+  }
+  @media (max-device-aspect-ratio: 2/3) {
+    height: calc(100vw * 1.5 - 9%);
+  }
+  @media (max-device-aspect-ratio: 10/16) {
+    height: calc(100vw * 1.6 - 9%);
+  }
+  @media (max-device-aspect-ratio: 9/16) {
+    height: calc(100vw * 1.778 - 9%);
+  }
 }
 body {
   background-color: rgb(9, 29, 18);
   background: linear-gradient(-45deg, rgb(9, 29, 18), 80%, rgb(88, 93, 90));
+  background-size: cover;
   color: white;
-  position: relative;
   overflow-y: scroll;
+  position: relative;
+
 
   @keyframes beforeAnimation {
     0% {
@@ -88,7 +102,7 @@ a {
 }
 
 .container {
-  // position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
