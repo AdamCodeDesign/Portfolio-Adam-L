@@ -9,7 +9,7 @@ import Skills from "./components/skills/Skills";
 
 function App() {
   return (
-    <>
+    <div className="bgd">
       <BgdAnimations />
       <Navbar />
       <div className="container">
@@ -30,7 +30,7 @@ function App() {
       <section id="Experience">Experience</section>
       <section id="Contact">Contact</section> */}
       </div>
-    </>
+    </div>
   );
 }
 
