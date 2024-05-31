@@ -1,5 +1,4 @@
 @use "sass:color";
-@use "sass:math";
 
 html {
   // scroll-snap-type: y mandatory;
@@ -12,49 +11,37 @@ html {
   box-sizing: border-box;
   font-family: "Source Code Pro", monospace;
 }
-.bgd {
+
+body {
+  background-color: rgb(98, 100, 98);
+  color: white;
   position: relative;
-  color: whitesmoke;
-  height: 100vh;
-}
-.bgd::before {
-  content: "";
-  position: fixed;
-  height: 100vh +60;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  background-color: rgb(6, 32, 17);
-  background: linear-gradient(-45deg, rgb(2, 29, 6), 70%, rgb(98, 100, 98));
-  background-attachment: fixed;
-  background-size: cover;
   z-index: -1;
 
   @keyframes beforeAnimation {
-    0% {
+    0%{
       top: 40%;
       right: 100%;
     }
-    50% {
+    50%{
       top: 20%;
       right: 50%;
     }
-    100% {
+    100%{
       top: 40%;
       right: 0%;
     }
   }
   @keyframes afterAnimation {
-    0% {
+    0%{
       top: 10%;
       right: 60%;
     }
-    50% {
+    50%{
       top: 20%;
       right: 10%;
     }
-    100% {
+    100%{
       top: 40%;
       right: 0%;
     }
@@ -101,6 +88,8 @@ a {
   justify-content: center;
   align-items: center;
   gap: 100px;
+
+ 
 
   section {
     max-height: 100vh;
