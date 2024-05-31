@@ -3,6 +3,7 @@
 html {
   // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 * {
@@ -11,37 +12,42 @@ html {
   box-sizing: border-box;
   font-family: "Source Code Pro", monospace;
 }
-
+.bgd {
+  position: relative;
+  display: block;
+  height: 100vh;
+}
 body {
-  background-color: rgb(98, 100, 98);
+  background-color: rgb(9, 29, 18);
+  background: linear-gradient(-45deg, rgb(9, 29, 18), 80%, rgb(88, 93, 90));
   color: white;
   position: relative;
-  z-index: -1;
+  overflow-y: scroll;
 
   @keyframes beforeAnimation {
-    0%{
+    0% {
       top: 40%;
       right: 100%;
     }
-    50%{
+    50% {
       top: 20%;
       right: 50%;
     }
-    100%{
+    100% {
       top: 40%;
       right: 0%;
     }
   }
   @keyframes afterAnimation {
-    0%{
+    0% {
       top: 10%;
       right: 60%;
     }
-    50%{
+    50% {
       top: 20%;
       right: 10%;
     }
-    100%{
+    100% {
       top: 40%;
       right: 0%;
     }
@@ -82,14 +88,12 @@ a {
 }
 
 .container {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 100px;
-
- 
 
   section {
     max-height: 100vh;

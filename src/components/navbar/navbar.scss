@@ -1,11 +1,10 @@
 .navbar {
-  min-height: 60px;
+  height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 3;
-
+  z-index: 4;
   span {
     font-weight: bold;
     font-size: 1rem;

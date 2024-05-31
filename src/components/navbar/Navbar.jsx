@@ -3,10 +3,12 @@ import "./navbar.scss";
 import git from '../../assets/github.png'
 import pubg from "../../assets/pubg.png";
 import CG from "../../assets/CG.svg";
+import Sidebar from '../sidebar/Sidebar';
 
 export default function Navbar() {
   return (
     <div className="navbar">
+
         <div className="sites">
           <a href="https://github.com/AdamCodeDesign">
             <img src={git} alt="git icon" />
