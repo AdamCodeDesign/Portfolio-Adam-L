@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:math";
 
 html {
   // scroll-snap-type: y mandatory;
@@ -14,6 +15,7 @@ html {
 .bgd {
   position: relative;
   color: whitesmoke;
+  height: 100vh +60;
 }
 .bgd::before {
   content: "";
