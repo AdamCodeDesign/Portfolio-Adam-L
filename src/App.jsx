@@ -10,22 +10,30 @@ import Skills from "./components/skills/Skills";
 function App() {
   return (
     <>
-      <Navbar/>
-      <BgdAnimations/>
-    <div className="container">
-      <section id="Hero">
-        <Hero />
-      </section>
-      <Sidebar />
-      <section id="Profile">
-        <Profile />
-      </section>
-      <section id="Skills"><Skills/></section>
-      <section id="Portfolio"><Portfolio/></section>
-      {/* <section id="Certificates">Certificates</section>
+      <div className="bgd">
+        <BgdAnimations />
+      </div>
+      <div className="content">
+        <Navbar />
+        <div className="container">
+          <section id="Hero">
+            <Hero />
+          </section>
+          <Sidebar />
+          <section id="Profile">
+            <Profile />
+          </section>
+          <section id="Skills">
+            <Skills />
+          </section>
+          <section id="Portfolio">
+            <Portfolio />
+          </section>
+          {/* <section id="Certificates">Certificates</section>
       <section id="Experience">Experience</section>
       <section id="Contact">Contact</section> */}
-    </div>
+        </div>
+      </div>
     </>
   );
 }
