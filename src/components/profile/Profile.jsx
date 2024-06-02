@@ -15,21 +15,21 @@ export default function Profile() {
   const descriptionProfile4 =
     "I have been fervently dedicated to honing my skills, consistently challenging myself with the exploration and implementation of innovative frontend techniques.";
   const variantsName = {
-    visible: { opacity: 1, transition: { staggerChildren: 0.05 } },
+    visible: { opacity: 1, transition: { staggerChildren: 0.03 } },
     hidden: { opacity: 0 },
   };
   const variantsProfession = {
     visible: {
       opacity: 1,
-      transition: { delayChildren: 1.5, staggerChildren: 0.05 },
+      transition: { delayChildren: 0.5, staggerChildren: 0.03 },
     },
     hidden: { opacity: 0 },
   };
   const variantsDescription = {
     visible: {
       transition: {
-        delayChildren: 3,
-        staggerChildren: 1,
+        delayChildren: 2,
+        staggerChildren: 0.5,
       },
     },
     hidden: {
