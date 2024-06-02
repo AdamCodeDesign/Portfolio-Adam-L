@@ -3,6 +3,7 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 * {
@@ -26,7 +27,7 @@ body {
     // position: relative;
     display: block;
     height: 100svh;
-    // overflow-y: auto;
+    overflow-y: auto;
     // overscroll-behavior-y: auto;
 
 
