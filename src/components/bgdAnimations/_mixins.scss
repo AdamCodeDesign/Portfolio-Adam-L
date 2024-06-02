@@ -1,0 +1,176 @@
+@mixin AnimationReact(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationReact{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}
+@mixin AnimationJS(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationJS{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}
+@mixin AnimationGit(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationGit{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}
+@mixin AnimationSass(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationSass{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}
+@mixin AnimationHtml(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationHtml{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}
+@mixin AnimationRwd(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationRwd{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}
+@mixin AnimationMui(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationMui{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}
+@mixin AnimationApi(
+  $topFrom,
+  $topTo,
+  $leftFrom,
+  $leftTo,
+  $rotateFrom,
+  $rotateTo
+) {
+  @keyframes bgdAnimationApi{
+    from {
+      transform: $rotateFrom;
+      top: $topFrom;
+      left: $leftFrom;
+    }
+
+    to {
+      transform: $rotateTo;
+      top: $topTo;
+      left: $leftTo;
+    }
+  }
+}

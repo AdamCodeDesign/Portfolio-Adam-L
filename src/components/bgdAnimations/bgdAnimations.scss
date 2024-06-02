@@ -1,3 +1,6 @@
+@use "sass:math";
+@import "mixins";
+
 .container-animations {
   width: 1px;
   height: 1px;
@@ -5,17 +8,7 @@
   font-size: 10px;
   position: sticky;
   top: 0;
-
-  @keyframes bgdAnimation {//tu zrobic mixina z propsami 
-    from {
-      transform: translate(0%) rotate(-5deg);
-    }
-   
-    to{
-      transform: translate(-30%) rotate(-125deg);
-
-    }
-  }
+  z-index: 0;
 
   div {
     text-shadow: 1px 0.05em 0px black;
@@ -24,75 +17,154 @@
   .react {
     position: absolute;
     height: 30px;
-    top: 50svh;
-    left: 14svh;
+    top: 20svh;
+    left: 4vw;
     transform: rotate(-5deg);
-    font-size: 8em;
-    animation-name: bgdAnimation;
+    font-size: 8svh;
+    @include AnimationReact(
+      20svh,
+      35svh,
+      5vw,
+      20vw,
+      rotate(-5deg),
+      rotate(-25deg)
+    );
+    animation-name: bgdAnimationReact;
     animation-timeline: scroll();
   }
   .JS {
-    position: fixed;
+    position: absolute;
     height: 30px;
     width: 30px;
-    top: 50%;
-    left: 70%;
+    top: 50svh;
+    left: 90vw;
     transform: rotate(15deg);
-    font-size: 8em;
+    font-size: 15svh;
+    @include AnimationJS(
+      50svh,
+      45svh,
+      90vw,
+      70vw,
+      rotate(15deg),
+      rotate(45deg)
+    );
+    animation-name: bgdAnimationJS;
+    animation-timeline: scroll();
   }
   .git {
-    position: fixed;
+    position: absolute;
     height: 30px;
     width: 30px;
-    top: 10%;
-    left: 45%;
+    top: 10svh;
+    left: 45vw;
     transform: rotate(5deg);
-    font-size: 6em;
+    font-size: 7svh;
+    @include AnimationGit(
+      10svh,
+      8svh,
+      45vw,
+      38vw,
+      rotate(15deg),
+      rotate(25deg)
+    );
+    animation-name: bgdAnimationGit;
+    animation-timeline: scroll();
   }
   .sass {
-    position: fixed;
+    position: absolute;
     height: 30px;
     width: 30px;
-    top: 60%;
-    left: 15%;
+    top: 60svh;
+    left: 15vw;
     transform: rotate(-28deg);
     font-size: 4em;
+    @include AnimationSass(
+      60svh,
+      50svh,
+      15vw,
+      25vw,
+      rotate(15deg),
+      rotate(25deg)
+    );
+    animation-name: bgdAnimationSass;
+    animation-timeline: scroll();
   }
   .html {
-    position: fixed;
+    position: absolute;
     height: 30px;
     width: 30px;
-    top: 25%;
-    left: 80%;
+    top: 25svh;
+    left: 80vw;
     transform: rotate(-15deg);
     font-size: 4em;
+    @include AnimationHtml(
+      10svh,
+      15svh,
+      70vw,
+      66vw,
+      rotate(15deg),
+      rotate(-15deg)
+    );
+    animation-name: bgdAnimationHtml;
+    animation-timeline: scroll();
   }
-  .RWD {
-    position: fixed;
-    height: 30px;
-    width: 30px;
-    top: 90%;
-    left: 60%;
-    transform: rotate(-15deg);
-    font-size: 2.5em;
-  }
+
   .MUI {
-    position: fixed;
+    position: absolute;
     height: 30px;
     width: 30px;
-    top: 5%;
-    left: 60%;
+    top: 50svh;
+    left: 60vw;
     transform: rotate(-15deg);
     font-size: 3em;
+    @include AnimationMui(
+      50svh,
+      43svh,
+      60vw,
+      55vw,
+      rotate(-15deg),
+      rotate(-35deg)
+    );
+    animation-name: bgdAnimationMui;
+    animation-timeline: scroll();
+  }
+  .RWD {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 90svh;
+    left: 60vw;
+    transform: rotate(-15deg);
+    font-size: 2.5em;
+    @include AnimationRwd(
+      90svh,
+      83svh,
+      60vw,
+      53vw,
+      rotate(-15deg),
+      rotate(-35deg)
+    );
+    animation-name: bgdAnimationRwd;
+    animation-timeline: scroll();
   }
 
   .api {
-    position: fixed;
+    position: absolute;
     height: 30px;
     width: 30px;
-    top: 70%;
-    left: 35%;
+    top: 70svh;
+    left: 35vw;
     transform: rotate(-5deg);
-    font-size: 3em;
+    font-size: 2.5em;
+    @include AnimationApi(
+      70svh,
+      63svh,
+      35vw,
+      40vw,
+      rotate(-5deg),
+      rotate(25deg)
+    );
+    animation-name: bgdAnimationApi;
+    animation-timeline: scroll();
   }
 }
