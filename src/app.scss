@@ -1,9 +1,9 @@
 @use "sass:color";
 
 html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  overflow-y: hidden;
+  // scroll-snap-type: y mandatory;
+  // scroll-behavior: smooth;
+  overflow-y: clip;
 }
 
 * {
@@ -24,69 +24,11 @@ body {
 
 
   .bgd {
-    // position: relative;
+    position: relative;
     display: block;
     height: 100svh;
     overflow-y: auto;
     // overscroll-behavior-y: auto;
-
-
-    @keyframes beforeAnimation {
-      0% {
-        top: 40%;
-        right: 100%;
-      }
-      50% {
-        top: 20%;
-        right: 50%;
-      }
-      100% {
-        top: 40%;
-        right: 0%;
-      }
-    }
-    @keyframes afterAnimation {
-      0% {
-        top: 10%;
-        right: 60%;
-      }
-      50% {
-        top: 20%;
-        right: 10%;
-      }
-      100% {
-        top: 40%;
-        right: 0%;
-      }
-    }
-
-    // &::before {
-    //   content: "";
-    //   height: 50px;
-    //   width: 50px;
-    //   background-color: lighten(rgb(89, 90, 89), 47%);
-    //   border-radius: 50%;
-    //   position: fixed;
-    //   top: 40%;
-    //   right: 100%;
-    //   box-shadow: 0 0 180px 170px lighten(rgb(89, 90, 89), 50%);
-    //   animation-name: beforeAnimation;
-    //   animation-timeline: scroll();
-    // }
-    // &::after {
-    //   content: "JS";
-    //   // height: 50px;
-    //   // width: 50px;
-    //   background-color: transparent;
-    //   opacity: 0.5;
-    //   // border-radius: 50%;
-    //   position: fixed;
-    //   top: 10%;
-    //   right: 60%;
-    //   // box-shadow: 0 0 80px 70px lighten(rgb(89, 90, 89), 50%);
-    //   animation-name: afterAnimation;
-    //   animation-timeline: scroll();
-    // }
   }
 
   a {
@@ -101,6 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    
 
     section {
       max-height: 100vh;
