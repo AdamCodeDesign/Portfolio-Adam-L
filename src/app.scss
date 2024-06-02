@@ -3,6 +3,7 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
-  overflow: scroll;
+  // overflow: hidden;
 
 
   .bgd {

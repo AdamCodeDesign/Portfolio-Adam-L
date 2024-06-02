@@ -19,7 +19,7 @@ function App() {
         <section id="Profile">
           <Profile />
         </section>
-        <Sidebar />
+        {/* <Sidebar /> */}
         <section id="Skills">
           <Skills />
         </section>

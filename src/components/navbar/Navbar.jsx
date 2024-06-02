@@ -8,7 +8,7 @@ import Sidebar from '../sidebar/Sidebar';
 export default function Navbar() {
   return (
     <div className="navbar">
-
+<Sidebar/>
         <div className="sites">
           <a href="https://github.com/AdamCodeDesign">
             <img src={git} alt="git icon" />
