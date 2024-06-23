@@ -30,10 +30,7 @@ export default function Links({setOpen}) {
     "Hero",
     "Profile",
     "Skills",
-    "Certificates",
-    "Experience",
     "Portfolio",
-    "Contact",
   ];
   return (
     <motion.div
